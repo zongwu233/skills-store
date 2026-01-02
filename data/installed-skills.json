@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "installed_skills": {
+    "skill-creator": {
+      "name": "skill-creator",
+      "install_path": "skills\\skill-creator",
+      "source": {
+        "type": "github",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-01-03T00:20:02.814912",
+      "last_updated": "2026-01-03T00:34:52.238840",
+      "is_valid": true,
+      "validation_errors": null
+    }
+  },
+  "config": {
+    "local_skills_path": "skills",
+    "auto_update": false,
+    "update_interval_hours": 24
+  }
+}
