@@ -50,3 +50,8 @@ tmp/
 
 # Separate repositories
 skills-registry/
+
+# Internal documentation (not for public repo)
+CREATION_PROCESS.md
+DECISIONS.md
+FIX_RELATIVE_PATHS.md
