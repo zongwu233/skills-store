@@ -28,7 +28,7 @@ Skills Store is now a first-class Claude Code Plugin!
 
 **Installation**:
 ```bash
-/plugin marketplace add https://github.com/your-username/skills-store
+/plugin marketplace add https://github.com/zongwu233/skills-store
 /plugin install skills-store
 ```
 
@@ -266,7 +266,7 @@ python scripts/list_skills.py
 **Quick Start**:
 ```bash
 # 1. Install the plugin
-/plugin marketplace add https://github.com/your-username/skills-store
+/plugin marketplace add https://github.com/zongwu233/skills-store
 /plugin install skills-store
 
 # 2. Search for skills
@@ -489,19 +489,19 @@ MIT License - See [LICENSE](LICENSE) file for details
 
 **Option 1: Plugin Marketplace**
 ```bash
-/plugin marketplace add https://github.com/your-username/skills-store
+/plugin marketplace add https://github.com/zongwu233/skills-store
 /plugin install skills-store
 ```
 
 **Option 2: Git Clone**
 ```bash
-git clone https://github.com/your-username/skills-store
+git clone https://github.com/zongwu233/skills-store
 cd skills-store
 ```
 
 **Option 3: Download Archive**
-- [ZIP Archive](https://github.com/your-username/skills-store/archive/refs/tags/v0.2.0.zip)
-- [TAR.GZ Archive](https://github.com/your-username/skills-store/archive/refs/tags/v0.2.0.tar.gz)
+- [ZIP Archive](https://github.com/zongwu233/skills-store/archive/refs/tags/v0.2.0.zip)
+- [TAR.GZ Archive](https://github.com/zongwu233/skills-store/archive/refs/tags/v0.2.0.tar.gz)
 
 ### System Requirements
 
@@ -556,8 +556,8 @@ cd skills-store
    - Review: Command-specific docs in `commands/*.md`
 
 3. **Community**
-   - [GitHub Issues](https://github.com/your-username/skills-store/issues)
-   - [GitHub Discussions](https://github.com/your-username/skills-store/discussions)
+   - [GitHub Issues](https://github.com/zongwu233/skills-store/issues)
+   - [GitHub Discussions](https://github.com/zongwu233/skills-store/discussions)
 
 ### Reporting Bugs
 
