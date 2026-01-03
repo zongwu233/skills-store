@@ -1,0 +1,31 @@
+{
+  "name": "skills-store",
+  "version": "0.2.0",
+  "description": "Claude Skills package manager - discover, install, and manage 21+ skills from a centralized registry",
+  "author": {
+    "name": "Skills Store Community",
+    "email": "noreply@github.com"
+  },
+  "homepage": "https://github.com/your-username/skills-store#readme",
+  "repository": "https://github.com/your-username/skills-store",
+  "license": "MIT",
+  "keywords": [
+    "package-manager",
+    "skills",
+    "productivity",
+    "workflow",
+    "automation"
+  ],
+  "commands": [
+    "skills",
+    "skills-list",
+    "skills-search",
+    "skills-install",
+    "skills-uninstall",
+    "skills-update",
+    "skills-info"
+  ],
+  "skills": [
+    "skills-store-manager"
+  ]
+}

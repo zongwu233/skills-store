@@ -8,6 +8,7 @@ Download and install a skill from GitHub or local directory.
 import sys
 import io
 import shutil
+import subprocess
 from pathlib import Path
 
 # Fix Windows console encoding
@@ -226,6 +227,9 @@ def install_from_github(
 
     installed_registry.add(skill_name, str(install_path), source_info)
 
+    # Create symlink for Claude Code auto-discovery
+    create_skill_symlink(install_path, skill_name)
+
     return True
 
 
@@ -292,7 +296,84 @@ def install_from_local(
 
     installed_registry.add(skill_name, str(install_path), source_info)
 
+    # Create symlink for Claude Code auto-discovery
+    create_skill_symlink(install_path, skill_name)
+
     return True
+
+
+def create_skill_symlink(skill_path: Path, skill_name: str) -> str:
+    """
+    Create a symlink from plugin-skills/ to the installed skill for Claude Code auto-discovery.
+
+    Implements a three-tier fallback strategy:
+    1. Symbolic link (Unix or Windows with Developer Mode)
+    2. Directory junction (Windows, no special permissions needed)
+    3. Copy (last resort, works everywhere)
+
+    Args:
+        skill_path: Path to the installed skill directory
+        skill_name: Name of the skill
+
+    Returns:
+        Type of link created: "symlink", "junction", or "copy"
+    """
+    # Get plugin-skills directory
+    script_dir = Path(__file__).parent
+    plugin_skills_dir = script_dir.parent / "plugin-skills"
+    plugin_skills_dir.mkdir(exist_ok=True)
+
+    symlink_path = plugin_skills_dir / skill_name
+
+    # Remove existing symlink or directory
+    if symlink_path.exists() or symlink_path.is_symlink():
+        if symlink_path.is_symlink():
+            symlink_path.unlink()
+        else:
+            shutil.rmtree(symlink_path)
+
+    # Try different linking methods
+    link_type = None
+
+    if sys.platform != 'win32':
+        # Unix/Linux/macOS: Use standard symbolic links
+        try:
+            symlink_path.symlink_to(skill_path.absolute())
+            link_type = "symlink"
+            print(f"✅ Created symbolic link in plugin-skills/ for Claude Code discovery")
+        except OSError as e:
+            print(f"⚠️  Could not create symlink: {e}", file=sys.stderr)
+            # Fallback to copy
+            shutil.copytree(skill_path, symlink_path)
+            link_type = "copy"
+            print(f"✅ Copied skill to plugin-skills/ for Claude Code discovery")
+    else:
+        # Windows: Try symlink → junction → copy
+        try:
+            # Try symbolic link first (requires Developer Mode or Admin)
+            symlink_path.symlink_to(skill_path.absolute())
+            link_type = "symlink"
+            print(f"✅ Created symbolic link in plugin-skills/ for Claude Code discovery")
+        except OSError:
+            try:
+                # Try directory junction (works without Developer Mode)
+                result = subprocess.run(
+                    ['mklink', '/J', str(symlink_path), str(skill_path.absolute())],
+                    shell=True,
+                    check=True,
+                    capture_output=True
+                )
+                link_type = "junction"
+                print(f"✅ Created directory junction in plugin-skills/ for Claude Code discovery")
+            except subprocess.CalledProcessError:
+                # Final fallback: copy the directory
+                shutil.copytree(skill_path, symlink_path)
+                link_type = "copy"
+                print(f"⚠️  Could not create symlink or junction on Windows")
+                print(f"✅ Copied skill to plugin-skills/ for Claude Code discovery")
+                print(f"   Note: Enable Developer Mode for symbolic links")
+
+    return link_type
 
 
 if __name__ == "__main__":
