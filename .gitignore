@@ -55,3 +55,7 @@ skills-registry/
 CREATION_PROCESS.md
 DECISIONS.md
 FIX_RELATIVE_PATHS.md
+
+# Claude Code local settings
+.claude/settings.local.json
+.claude/settings.local.*.json
