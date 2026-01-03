@@ -3,7 +3,7 @@
 > 📦 Claude Skills Package Manager - Discover, install, and manage Claude Skills with automatic discovery
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-0.2.0-green.svg)](https://github.com/your-username/skills-store/releases)
+[![Version](https://img.shields.io/badge/version-0.2.0-green.svg)](https://github.com/zongwu233/skills-store/releases)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-blue.svg)](https://claude.com/claude-code)
 
@@ -62,7 +62,7 @@ Skills Store v0.2.0 is a full-featured Claude Code Plugin that provides automati
 
 ```bash
 # Install the plugin
-/plugin marketplace add https://github.com/your-username/skills-store
+/plugin marketplace add https://github.com/zongwu233/skills-store
 /plugin install skills-store
 
 # Search for skills
@@ -79,7 +79,7 @@ Skills Store v0.2.0 is a full-featured Claude Code Plugin that provides automati
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/skills-store.git
+git clone https://github.com/zongwu233/skills-store.git
 cd skills-store
 
 # Install dependencies
@@ -602,8 +602,8 @@ MIT License - See [LICENSE](LICENSE) file for details
 For issues, questions, or contributions:
 
 - 📖 [Documentation](references/user-guide.md)
-- 🐛 [Issue Tracker](https://github.com/your-username/skills-store/issues)
-- 💬 [Discussions](https://github.com/your-username/skills-store/discussions)
+- 🐛 [Issue Tracker](https://github.com/zongwu233/skills-store/issues)
+- 💬 [Discussions](https://github.com/zongwu233/skills-store/discussions)
 
 ---
 
