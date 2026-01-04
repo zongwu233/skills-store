@@ -16,6 +16,7 @@ Manage Claude Skills from the centralized registry.
 ## Subcommands
 
 - **list** - List installed skills with validation status
+- **list-all** - List all available skills in the registry
 - **search** - Search for skills by name, description, or tags
 - **install** - Install a skill from the registry
 - **uninstall** - Remove an installed skill
@@ -26,6 +27,7 @@ Manage Claude Skills from the centralized registry.
 
 ```
 /skills list
+/skills list-all
 /skills search "pdf"
 /skills install pdf
 /skills uninstall pdf

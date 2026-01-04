@@ -19,6 +19,7 @@
   "commands": [
     "skills",
     "skills-list",
+    "skills-list-all",
     "skills-search",
     "skills-install",
     "skills-uninstall",
