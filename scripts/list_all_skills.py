@@ -3,6 +3,7 @@
 List All Skills Script
 
 Display all skills available in the registry.
+Auto-syncs with remote registry if configured.
 """
 
 import sys
@@ -19,6 +20,7 @@ if sys.platform == 'win32':
 sys.path.insert(0, str(Path(__file__).parent))
 
 from utils.registry import SkillsRegistry
+from utils.remote_registry import RemoteRegistryFetcher
 
 
 def format_skill_summary(skill: dict) -> str:
@@ -55,6 +57,7 @@ def main():
     category = None
     source_type = None
     output_json = False
+    no_sync = False
 
     i = 1
     while i < len(sys.argv):
@@ -67,9 +70,31 @@ def main():
         elif sys.argv[i] == '--json':
             output_json = True
             i += 1
+        elif sys.argv[i] == '--no-sync':
+            no_sync = True
+            i += 1
         else:
             print(f"Unknown option: {sys.argv[i]}", file=sys.stderr)
             sys.exit(1)
+
+    # Check for remote updates (unless disabled)
+    if not no_sync:
+        try:
+            fetcher = RemoteRegistryFetcher()
+            if fetcher.config.get('auto_sync', {}).get('on_list_all', True):
+                remote_data = fetcher.fetch()
+                if remote_data:
+                    # Update local registry
+                    registry_obj = SkillsRegistry()
+                    local_data = registry_obj.load()
+
+                    # Merge with local
+                    merged_data = fetcher.merge_with_local(local_data, remote_data)
+                    registry_obj.save(merged_data)
+                    print()
+        except Exception as e:
+            # Don't fail if remote sync fails
+            pass
 
     # Load registry and get all skills
     try:
