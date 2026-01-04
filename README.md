@@ -25,6 +25,7 @@ Skills Store v0.2.0 is a full-featured Claude Code Plugin that provides automati
 - 📦 **Install** - Download and install skills from GitHub or local directories
 - 🔗 **Auto-Discovery** - Skills are immediately available after installation via symbolic links
 - 📋 **List** - View all installed skills with validation status
+- 🌐 **List All** - Browse all available skills in the registry
 - 📖 **Details** - Get comprehensive information about any skill
 - ✅ **Validate** - Check if skills meet required standards
 - 🌍 **Cross-Platform** - Works on Windows, macOS, and Linux with intelligent fallback
@@ -39,7 +40,7 @@ Skills Store v0.2.0 is a full-featured Claude Code Plugin that provides automati
 | **Total Skills** | 21+ |
 | **Source Repositories** | 9 |
 | **Categories** | 9 |
-| **Slash Commands** | 7 |
+| **Slash Commands** | 8 |
 | **Awesome Lists** | 4 |
 
 ### Supported Repositories
@@ -64,6 +65,9 @@ Skills Store v0.2.0 is a full-featured Claude Code Plugin that provides automati
 # Install the plugin
 /plugin marketplace add https://github.com/zongwu233/skills-store
 /plugin install skills-store
+
+# List all available skills
+/skills list-all
 
 # Search for skills
 /skills search "pdf"
@@ -105,7 +109,37 @@ This guide covers both the Plugin method (recommended) and the Python script met
 
 The Plugin method provides the best user experience with automatic skill discovery.
 
-#### 1. Search for Skills
+#### 1. Browse All Available Skills
+
+```bash
+# List all available skills in the registry
+/skills list-all
+
+# Filter by category
+/skills list-all --category document
+
+# Filter by source
+/skills list-all --source github
+```
+
+**Output Example**:
+```
+📦 All Available Skills (21):
+
+1. 📦 pdf
+   Comprehensive PDF manipulation toolkit for extracting text and tables...
+   📁 Category: document
+   🔗 Source: github (anthropics/skills)
+   🏷️  Tags: document, pdf, manipulation, forms
+
+2. 📦 docx
+   Comprehensive document creation, editing, and analysis...
+   📁 Category: document
+   🔗 Source: github (anthropics/skills)
+   🏷️  Tags: document, docx, editing
+```
+
+#### 2. Search for Skills
 
 ```bash
 # Search by keyword
@@ -114,7 +148,7 @@ The Plugin method provides the best user experience with automatic skill discove
 # Search by category
 /skills search "" --category document
 
-# List all skills
+# List all skills (alternative to list-all)
 /skills search ""
 ```
 
@@ -129,7 +163,7 @@ The Plugin method provides the best user experience with automatic skill discove
    🏷️  Tags: document, pdf, manipulation, forms
 ```
 
-#### 2. Get Skill Information
+#### 3. Get Skill Information
 
 ```bash
 # View detailed information
@@ -153,7 +187,7 @@ Installation Status:
   Location: skills/pdf
 ```
 
-#### 3. Install a Skill
+#### 4. Install a Skill
 
 ```bash
 # Install from registry
@@ -172,7 +206,7 @@ Installation Status:
 3. Symbolic link created in `plugin-skills/pdf/`
 4. **Skill is immediately available to Claude Code!**
 
-#### 4. List Installed Skills
+#### 5. List Installed Skills
 
 ```bash
 # List all installed skills
@@ -202,7 +236,9 @@ Installation Status:
    ✅ Valid
 ```
 
-#### 5. Update a Skill
+**Tip**: Use `/skills list-all` to see all available skills in the registry that you can install.
+
+#### 6. Update a Skill
 
 ```bash
 # Update to latest version
@@ -211,7 +247,7 @@ Installation Status:
 
 This is equivalent to `/skills install pdf --force`.
 
-#### 6. Uninstall a Skill
+#### 7. Uninstall a Skill
 
 ```bash
 # Remove a skill
@@ -228,13 +264,16 @@ This is equivalent to `/skills install pdf --force`.
 If you prefer using Python scripts directly, all the same functionality is available:
 
 ```bash
+# List all available skills
+python scripts/list_all_skills.py
+
 # Search
 python scripts/search_skills.py "pdf"
 
 # Install
 python scripts/install_skill.py pdf
 
-# List
+# List installed
 python scripts/list_skills.py
 
 # Show details
@@ -265,6 +304,7 @@ skills-store/
 ├── commands/                    # Slash commands
 │   ├── skills.md                # Main dispatcher
 │   ├── skills-list.md
+│   ├── skills-list-all.md
 │   ├── skills-search.md
 │   ├── skills-install.md
 │   ├── skills-uninstall.md
@@ -277,6 +317,7 @@ skills-store/
 │   └── skill-creator/
 │
 ├── scripts/                     # Python management scripts
+│   ├── list_all_skills.py       # List all available skills
 │   ├── search_skills.py         # Search for skills
 │   ├── install_skill.py         # Install a skill
 │   ├── uninstall_skill.py       # Uninstall a skill
