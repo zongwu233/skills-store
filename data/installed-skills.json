@@ -14,6 +14,58 @@
       "last_updated": "2026-01-03T00:34:52.238840",
       "is_valid": true,
       "validation_errors": null
+    },
+    "pdf": {
+      "name": "pdf",
+      "install_path": "skills/pdf",
+      "source": {
+        "type": "github",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-01-13T23:46:10.919925",
+      "last_updated": "2026-01-13T23:46:10.919946",
+      "is_valid": true
+    },
+    "brainstorming": {
+      "name": "brainstorming",
+      "install_path": "skills/brainstorming",
+      "source": {
+        "type": "github",
+        "repo": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "branch": "main"
+      },
+      "installed_at": "2026-01-13T23:46:18.980605",
+      "last_updated": "2026-01-13T23:46:18.980628",
+      "is_valid": true
+    },
+    "senior-architect": {
+      "name": "senior-architect",
+      "install_path": "skills/senior-architect",
+      "source": {
+        "type": "github",
+        "repo": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-01-13T23:46:28.275421",
+      "last_updated": "2026-01-13T23:46:28.275440",
+      "is_valid": true
+    },
+    "senior-devops": {
+      "name": "senior-devops",
+      "install_path": "skills/senior-devops",
+      "source": {
+        "type": "github",
+        "repo": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-01-13T23:47:05.195942",
+      "last_updated": "2026-01-13T23:47:05.195962",
+      "is_valid": true
     }
   },
   "config": {

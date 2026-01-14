@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "sources": [
+    {
+      "name": "skills-registry",
+      "type": "github",
+      "url": "https://github.com/zongwu233/skills-registry",
+      "branch": "main",
+      "skills_path": "skills/skills-registry.json",
+      "enabled": true,
+      "priority": 1
+    }
+  ],
+  "cache": {
+    "enabled": true,
+    "ttl_hours": 24,
+    "last_check": "2026-01-13T23:38:01.664310",
+    "etag": "\"66d51358f73748080665d1239f2ee075923272c9\""
+  },
+  "auto_sync": {
+    "enabled": true,
+    "on_search": true,
+    "on_list_all": true
+  }
+}
