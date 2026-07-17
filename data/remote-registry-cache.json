@@ -1,16 +1,16 @@
 {
   "version": "1.0.0",
-  "last_updated": "2026-01-03T01:00:00Z",
+  "last_updated": "2026-01-13T00:00:00Z",
   "skills": {
     "pdf": {
       "name": "pdf",
       "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and filling forms",
       "source": {
         "type": "github",
-        "repo": "anthropics/anthropic-skills",
-        "url": "https://github.com/anthropics/anthropic-skills",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
         "branch": "main",
-        "path": "document-skills/unknown/skills/pdf"
+        "path": "skills/pdf"
       },
       "metadata": {
         "author": "Anthropic",
@@ -29,10 +29,10 @@
       "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction",
       "source": {
         "type": "github",
-        "repo": "anthropics/anthropic-skills",
-        "url": "https://github.com/anthropics/anthropic-skills",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
         "branch": "main",
-        "path": "document-skills/unknown/skills/docx"
+        "path": "skills/docx"
       },
       "metadata": {
         "author": "Anthropic",
@@ -51,10 +51,10 @@
       "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for creating new presentations, modifying content, working with layouts, or adding comments",
       "source": {
         "type": "github",
-        "repo": "anthropics/anthropic-skills",
-        "url": "https://github.com/anthropics/anthropic-skills",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
         "branch": "main",
-        "path": "document-skills/unknown/skills/pptx"
+        "path": "skills/pptx"
       },
       "metadata": {
         "author": "Anthropic",
@@ -73,10 +73,10 @@
       "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization",
       "source": {
         "type": "github",
-        "repo": "anthropics/anthropic-skills",
-        "url": "https://github.com/anthropics/anthropic-skills",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
         "branch": "main",
-        "path": "document-skills/unknown/skills/xlsx"
+        "path": "skills/xlsx"
       },
       "metadata": {
         "author": "Anthropic",
@@ -95,10 +95,10 @@
       "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems",
       "source": {
         "type": "github",
-        "repo": "anthropics/anthropic-skills",
-        "url": "https://github.com/anthropics/anthropic-skills",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
         "branch": "main",
-        "path": "document-skills/unknown/skills/algorithmic-art"
+        "path": "skills/algorithmic-art"
       },
       "metadata": {
         "author": "Anthropic",
@@ -115,13 +115,13 @@
     },
     "frontend-design": {
       "name": "frontend-design",
-      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when user asks to build web components, pages, artifacts, posters, or applications",
       "source": {
         "type": "github",
-        "repo": "anthropics/anthropic-skills",
-        "url": "https://github.com/anthropics/anthropic-skills",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
         "branch": "main",
-        "path": "document-skills/unknown/skills/frontend-design"
+        "path": "skills/frontend-design"
       },
       "metadata": {
         "author": "Anthropic",
@@ -141,10 +141,10 @@
       "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools",
       "source": {
         "type": "github",
-        "repo": "anthropics/anthropic-skills",
-        "url": "https://github.com/anthropics/anthropic-skills",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
         "branch": "main",
-        "path": "document-skills/unknown/skills/mcp-builder"
+        "path": "skills/mcp-builder"
       },
       "metadata": {
         "author": "Anthropic",
@@ -163,10 +163,10 @@
       "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities",
       "source": {
         "type": "github",
-        "repo": "anthropics/anthropic-skills",
-        "url": "https://github.com/anthropics/anthropic-skills",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
         "branch": "main",
-        "path": "document-skills/unknown/skills/skill-creator"
+        "path": "skills/skill-creator"
       },
       "metadata": {
         "author": "Anthropic",
@@ -180,15 +180,37 @@
         "category": "development"
       }
     },
-    "superpowers": {
-      "name": "superpowers",
-      "description": "Core skills library for Claude Code with 20+ battle-tested skills including TDD, debugging, and collaboration patterns. Provides brainstorming, planning, and execution commands",
+    "brainstorming": {
+      "name": "brainstorming",
+      "description": "Brainstorming and ideation skills for generating creative solutions and exploring problem spaces",
       "source": {
         "type": "github",
         "repo": "obra/superpowers",
         "url": "https://github.com/obra/superpowers",
         "branch": "main",
-        "path": "skills"
+        "path": "skills/brainstorming"
+      },
+      "metadata": {
+        "author": "Jesse Vincent",
+        "license": "MIT",
+        "tags": [
+          "productivity",
+          "brainstorming",
+          "ideation",
+          "creativity"
+        ],
+        "category": "productivity"
+      }
+    },
+    "test-driven-development": {
+      "name": "test-driven-development",
+      "description": "TDD skills for writing tests first, refactoring with confidence, and maintaining high code quality",
+      "source": {
+        "type": "github",
+        "repo": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "branch": "main",
+        "path": "skills/test-driven-development"
       },
       "metadata": {
         "author": "Jesse Vincent",
@@ -196,9 +218,30 @@
         "tags": [
           "productivity",
           "tdd",
+          "testing",
+          "quality"
+        ],
+        "category": "productivity"
+      }
+    },
+    "systematic-debugging": {
+      "name": "systematic-debugging",
+      "description": "Systematic debugging skills for identifying root causes and fixing bugs efficiently",
+      "source": {
+        "type": "github",
+        "repo": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "branch": "main",
+        "path": "skills/systematic-debugging"
+      },
+      "metadata": {
+        "author": "Jesse Vincent",
+        "license": "MIT",
+        "tags": [
+          "productivity",
           "debugging",
-          "collaboration",
-          "workflow"
+          "troubleshooting",
+          "problem-solving"
         ],
         "category": "productivity"
       }
@@ -211,7 +254,7 @@
         "repo": "alirezarezvani/claude-skills",
         "url": "https://github.com/alirezarezvani/claude-skills",
         "branch": "main",
-        "path": "senior-architect-skill"
+        "path": "engineering-team/senior-architect"
       },
       "metadata": {
         "author": "Alireza Rezvani",
@@ -225,38 +268,15 @@
         "category": "development"
       }
     },
-    "product-management": {
-      "name": "product-management",
-      "description": "Product management skills for roadmapping, user stories, prioritization frameworks, MVP definition, and product strategy. Bridges technical and business perspectives",
-      "source": {
-        "type": "github",
-        "repo": "alirezarezvani/claude-skills",
-        "url": "https://github.com/alirezarezvani/claude-skills",
-        "branch": "main",
-        "path": "product-management-skill"
-      },
-      "metadata": {
-        "author": "Alireza Rezvani",
-        "license": "MIT",
-        "tags": [
-          "product",
-          "management",
-          "strategy",
-          "roadmap",
-          "agile"
-        ],
-        "category": "business"
-      }
-    },
-    "devops-engineer": {
-      "name": "devops-engineer",
+    "senior-devops": {
+      "name": "senior-devops",
       "description": "DevOps engineering skills for CI/CD pipelines, infrastructure as code, container orchestration, monitoring, and deployment automation. Covers Docker, Kubernetes, and cloud platforms",
       "source": {
         "type": "github",
         "repo": "alirezarezvani/claude-skills",
         "url": "https://github.com/alirezarezvani/claude-skills",
         "branch": "main",
-        "path": "devops-engineer-skill"
+        "path": "engineering-team/senior-devops"
       },
       "metadata": {
         "author": "Alireza Rezvani",
@@ -359,28 +379,6 @@
         "category": "productivity"
       }
     },
-    "n8n-workflow": {
-      "name": "n8n-workflow",
-      "description": "n8n workflow automation skills. Teach Claude to build production-ready n8n workflows covering 525+ nodes and 2653+ templates. Includes integration patterns and best practices for workflow automation",
-      "source": {
-        "type": "github",
-        "repo": "czlonkowski/n8n-skills",
-        "url": "https://github.com/czlonkowski/n8n-skills",
-        "branch": "main",
-        "path": "skills"
-      },
-      "metadata": {
-        "author": "czlonkowski",
-        "license": "MIT",
-        "tags": [
-          "automation",
-          "workflow",
-          "n8n",
-          "integration"
-        ],
-        "category": "automation"
-      }
-    },
     "hf-llm-trainer": {
       "name": "hf-llm-trainer",
       "description": "Hugging Face LLM training skill. Fine-tune and train open-source language models using TRL (Transformer Reinforcement Learning) on Hugging Face Jobs. Covers model training, evaluation, and deployment workflows",
@@ -426,28 +424,6 @@
         "category": "science"
       }
     },
-    "code-documentation": {
-      "name": "code-documentation",
-      "description": "Automatic code documentation generation skill. Automatically documents all AI-generated code changes in Markdown format with real-time HTML viewer. Ensures comprehensive documentation for code changes",
-      "source": {
-        "type": "github",
-        "repo": "bear2u/my-skills",
-        "url": "https://github.com/bear2u/my-skills",
-        "branch": "master",
-        "path": "skills"
-      },
-      "metadata": {
-        "author": "bear2u",
-        "license": "MIT",
-        "tags": [
-          "documentation",
-          "code",
-          "markdown",
-          "generator"
-        ],
-        "category": "productivity"
-      }
-    },
     "skill-seekers": {
       "name": "skill-seekers",
       "description": "Convert documentation websites into Claude Skills. Tool that transforms documentation sites into skill format for easy integration and automated skill creation from existing docs",
@@ -490,12 +466,7 @@
     "productivity": {
       "name": "Productivity & Workflow",
       "description": "Skills for improving productivity, reasoning, and documentation",
-      "count": 3
-    },
-    "business": {
-      "name": "Business & Product",
-      "description": "Skills for product management, strategy, and business operations",
-      "count": 1
+      "count": 4
     },
     "operations": {
       "name": "Operations & DevOps",
@@ -507,11 +478,6 @@
       "description": "Skills for bioinformatics, ML training, data analysis, and research",
       "count": 5
     },
-    "automation": {
-      "name": "Automation & Workflow",
-      "description": "Skills for workflow automation and integration",
-      "count": 1
-    },
     "tools": {
       "name": "Tools & Utilities",
       "description": "Skills for tools, converters, and utilities",
@@ -520,9 +486,9 @@
   },
   "sources": [
     {
-      "name": "anthropics/anthropic-skills",
+      "name": "anthropics/skills",
       "type": "github",
-      "url": "https://github.com/anthropics/anthropic-skills",
+      "url": "https://github.com/anthropics/skills",
       "description": "Official Anthropic skills repository",
       "skills_count": 8
     },
@@ -531,14 +497,14 @@
       "type": "github",
       "url": "https://github.com/obra/superpowers",
       "description": "Battle-tested productivity skills by Jesse Vincent",
-      "skills_count": 20
+      "skills_count": 13
     },
     {
       "name": "alirezarezvani/claude-skills",
       "type": "github",
       "url": "https://github.com/alirezarezvani/claude-skills",
       "description": "Professional skills for architecture, product, and DevOps",
-      "skills_count": 3
+      "skills_count": 2
     },
     {
       "name": "K-Dense-AI/claude-scientific-skills",
@@ -555,25 +521,11 @@
       "skills_count": 10
     },
     {
-      "name": "czlonkowski/n8n-skills",
-      "type": "github",
-      "url": "https://github.com/czlonkowski/n8n-skills",
-      "description": "n8n workflow automation skills",
-      "skills_count": 5
-    },
-    {
       "name": "huggingface/skills",
       "type": "github",
       "url": "https://github.com/huggingface/skills",
       "description": "Hugging Face ML training and dataset skills",
-      "skills_count": 5
-    },
-    {
-      "name": "bear2u/my-skills",
-      "type": "github",
-      "url": "https://github.com/bear2u/my-skills",
-      "description": "Personal collection of frequently used skills",
-      "skills_count": 3
+      "skills_count": 2
     },
     {
       "name": "yusufkaraaslan/Skill_Seekers",
@@ -581,56 +533,12 @@
       "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
       "description": "Convert documentation websites to Claude Skills",
       "skills_count": 1
-    },
-    {
-      "name": "BehiSecc/awesome-claude-skills",
-      "type": "awesome-list",
-      "url": "https://github.com/BehiSecc/awesome-claude-skills",
-      "description": "Curated list of Claude Skills and resources",
-      "skills_count": 50
-    },
-    {
-      "name": "VoltAgent/awesome-claude-skills",
-      "type": "awesome-list",
-      "url": "https://github.com/VoltAgent/awesome-claude-skills",
-      "description": "Awesome collection of Claude Skills and resources",
-      "skills_count": 40
-    },
-    {
-      "name": "travisvn/awesome-claude-skills",
-      "type": "awesome-list",
-      "url": "https://github.com/travisvn/awesome-claude-skills",
-      "description": "Comprehensive awesome list for Claude Skills",
-      "skills_count": 30
-    }
-  ],
-  "awesome_lists": [
-    {
-      "name": "BehiSecc/awesome-claude-skills",
-      "url": "https://github.com/BehiSecc/awesome-claude-skills",
-      "description": "Curated collection of Claude Skills with resources"
-    },
-    {
-      "name": "VoltAgent/awesome-claude-skills",
-      "url": "https://github.com/VoltAgent/awesome-claude-skills",
-      "description": "The awesome collection of Claude Skills and resources"
-    },
-    {
-      "name": "travisvn/awesome-claude-skills",
-      "url": "https://github.com/travisvn/awesome-claude-skills",
-      "description": "A curated list of awesome Claude Skills, resources, and tools"
-    },
-    {
-      "name": "ComposioHQ/awesome-claude-skills",
-      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "description": "Another curated list of Claude Skills and tools"
     }
   ],
   "stats": {
-    "total_skills": 21,
-    "total_sources": 12,
-    "total_categories": 9,
-    "total_awesome_lists": 4,
-    "last_sync": "2026-01-03T01:00:00Z"
+    "total_skills": 20,
+    "total_sources": 7,
+    "total_categories": 7,
+    "last_sync": "2026-01-13T00:00:00Z"
   }
 }

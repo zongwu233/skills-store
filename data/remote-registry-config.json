@@ -14,8 +14,8 @@
   "cache": {
     "enabled": true,
     "ttl_hours": 24,
-    "last_check": "2026-01-13T23:38:01.664310",
-    "etag": "\"66d51358f73748080665d1239f2ee075923272c9\""
+    "last_check": "2026-02-02T22:15:25.644417",
+    "etag": "\"deed60cad57ccc67941800711a4f4ac43f66d308\""
   },
   "auto_sync": {
     "enabled": true,

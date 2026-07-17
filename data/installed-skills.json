@@ -66,6 +66,123 @@
       "installed_at": "2026-01-13T23:47:05.195942",
       "last_updated": "2026-01-13T23:47:05.195962",
       "is_valid": true
+    },
+    "docx": {
+      "name": "docx",
+      "install_path": "skills/docx",
+      "source": {
+        "type": "github",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-02-02T22:16:48.307558",
+      "last_updated": "2026-02-02T22:16:48.307571",
+      "is_valid": true
+    },
+    "pptx": {
+      "name": "pptx",
+      "install_path": "skills/pptx",
+      "source": {
+        "type": "github",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-02-02T22:17:31.145589",
+      "last_updated": "2026-02-02T22:17:31.145607",
+      "is_valid": true
+    },
+    "xlsx": {
+      "name": "xlsx",
+      "install_path": "skills/xlsx",
+      "source": {
+        "type": "github",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-02-02T22:17:33.611427",
+      "last_updated": "2026-02-02T22:17:33.611443",
+      "is_valid": true
+    },
+    "algorithmic-art": {
+      "name": "algorithmic-art",
+      "install_path": "skills/algorithmic-art",
+      "source": {
+        "type": "github",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-02-02T22:17:52.254749",
+      "last_updated": "2026-02-02T22:17:52.254778",
+      "is_valid": true
+    },
+    "frontend-design": {
+      "name": "frontend-design",
+      "install_path": "skills/frontend-design",
+      "source": {
+        "type": "github",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-02-02T22:18:14.875239",
+      "last_updated": "2026-02-02T22:18:14.875257",
+      "is_valid": true
+    },
+    "mcp-builder": {
+      "name": "mcp-builder",
+      "install_path": "skills/mcp-builder",
+      "source": {
+        "type": "github",
+        "repo": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-02-02T22:18:24.927225",
+      "last_updated": "2026-02-02T22:18:24.927244",
+      "is_valid": true
+    },
+    "test-driven-development": {
+      "name": "test-driven-development",
+      "install_path": "skills/test-driven-development",
+      "source": {
+        "type": "github",
+        "repo": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "branch": "main"
+      },
+      "installed_at": "2026-02-02T22:18:50.915067",
+      "last_updated": "2026-02-02T22:18:50.915083",
+      "is_valid": true
+    },
+    "systematic-debugging": {
+      "name": "systematic-debugging",
+      "install_path": "skills/systematic-debugging",
+      "source": {
+        "type": "github",
+        "repo": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "branch": "main"
+      },
+      "installed_at": "2026-02-02T22:18:57.931271",
+      "last_updated": "2026-02-02T22:18:57.931289",
+      "is_valid": true
+    },
+    "sequential-thinking": {
+      "name": "sequential-thinking",
+      "install_path": "skills/sequential-thinking",
+      "source": {
+        "type": "github",
+        "repo": "mrgoonie/claudekit-skills",
+        "url": "https://github.com/mrgoonie/claudekit-skills",
+        "branch": "main"
+      },
+      "installed_at": "2026-02-02T22:19:01.374024",
+      "last_updated": "2026-02-02T22:19:01.374043",
+      "is_valid": true
     }
   },
   "config": {

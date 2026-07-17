@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "last_updated": "2026-01-13T00:00:00Z",
+  "last_updated": "2026-02-02T22:15:25.645846",
   "skills": {
     "pdf": {
       "name": "pdf",
@@ -15,7 +15,12 @@
       "metadata": {
         "author": "Anthropic",
         "license": "Proprietary",
-        "tags": ["document", "pdf", "manipulation", "forms"],
+        "tags": [
+          "document",
+          "pdf",
+          "manipulation",
+          "forms"
+        ],
         "category": "document"
       }
     },
@@ -32,7 +37,12 @@
       "metadata": {
         "author": "Anthropic",
         "license": "Proprietary",
-        "tags": ["document", "docx", "word", "editing"],
+        "tags": [
+          "document",
+          "docx",
+          "word",
+          "editing"
+        ],
         "category": "document"
       }
     },
@@ -49,7 +59,12 @@
       "metadata": {
         "author": "Anthropic",
         "license": "Proprietary",
-        "tags": ["presentation", "pptx", "powerpoint", "slides"],
+        "tags": [
+          "presentation",
+          "pptx",
+          "powerpoint",
+          "slides"
+        ],
         "category": "document"
       }
     },
@@ -66,7 +81,12 @@
       "metadata": {
         "author": "Anthropic",
         "license": "Proprietary",
-        "tags": ["spreadsheet", "excel", "xlsx", "data"],
+        "tags": [
+          "spreadsheet",
+          "excel",
+          "xlsx",
+          "data"
+        ],
         "category": "document"
       }
     },
@@ -83,7 +103,13 @@
       "metadata": {
         "author": "Anthropic",
         "license": "Proprietary",
-        "tags": ["creative", "art", "generative", "p5.js", "algorithmic"],
+        "tags": [
+          "creative",
+          "art",
+          "generative",
+          "p5.js",
+          "algorithmic"
+        ],
         "category": "creative"
       }
     },
@@ -100,7 +126,13 @@
       "metadata": {
         "author": "Anthropic",
         "license": "Proprietary",
-        "tags": ["frontend", "web", "design", "ui", "react"],
+        "tags": [
+          "frontend",
+          "web",
+          "design",
+          "ui",
+          "react"
+        ],
         "category": "development"
       }
     },
@@ -117,7 +149,12 @@
       "metadata": {
         "author": "Anthropic",
         "license": "Proprietary",
-        "tags": ["development", "mcp", "server", "api"],
+        "tags": [
+          "development",
+          "mcp",
+          "server",
+          "api"
+        ],
         "category": "development"
       }
     },
@@ -134,7 +171,12 @@
       "metadata": {
         "author": "Anthropic",
         "license": "Proprietary",
-        "tags": ["development", "skill", "authoring", "tools"],
+        "tags": [
+          "development",
+          "skill",
+          "authoring",
+          "tools"
+        ],
         "category": "development"
       }
     },
@@ -151,7 +193,12 @@
       "metadata": {
         "author": "Jesse Vincent",
         "license": "MIT",
-        "tags": ["productivity", "brainstorming", "ideation", "creativity"],
+        "tags": [
+          "productivity",
+          "brainstorming",
+          "ideation",
+          "creativity"
+        ],
         "category": "productivity"
       }
     },
@@ -168,7 +215,12 @@
       "metadata": {
         "author": "Jesse Vincent",
         "license": "MIT",
-        "tags": ["productivity", "tdd", "testing", "quality"],
+        "tags": [
+          "productivity",
+          "tdd",
+          "testing",
+          "quality"
+        ],
         "category": "productivity"
       }
     },
@@ -185,7 +237,12 @@
       "metadata": {
         "author": "Jesse Vincent",
         "license": "MIT",
-        "tags": ["productivity", "debugging", "troubleshooting", "problem-solving"],
+        "tags": [
+          "productivity",
+          "debugging",
+          "troubleshooting",
+          "problem-solving"
+        ],
         "category": "productivity"
       }
     },
@@ -202,7 +259,12 @@
       "metadata": {
         "author": "Alireza Rezvani",
         "license": "MIT",
-        "tags": ["architecture", "design", "leadership", "system-design"],
+        "tags": [
+          "architecture",
+          "design",
+          "leadership",
+          "system-design"
+        ],
         "category": "development"
       }
     },
@@ -219,7 +281,13 @@
       "metadata": {
         "author": "Alireza Rezvani",
         "license": "MIT",
-        "tags": ["devops", "cicd", "docker", "kubernetes", "automation"],
+        "tags": [
+          "devops",
+          "cicd",
+          "docker",
+          "kubernetes",
+          "automation"
+        ],
         "category": "operations"
       }
     },
@@ -236,7 +304,12 @@
       "metadata": {
         "author": "K-Dense Team",
         "license": "MIT",
-        "tags": ["bioinformatics", "genomics", "sequence-analysis", "biology"],
+        "tags": [
+          "bioinformatics",
+          "genomics",
+          "sequence-analysis",
+          "biology"
+        ],
         "category": "science"
       }
     },
@@ -253,7 +326,12 @@
       "metadata": {
         "author": "K-Dense Team",
         "license": "MIT",
-        "tags": ["data-science", "statistics", "visualization", "analysis"],
+        "tags": [
+          "data-science",
+          "statistics",
+          "visualization",
+          "analysis"
+        ],
         "category": "science"
       }
     },
@@ -270,7 +348,12 @@
       "metadata": {
         "author": "K-Dense Team",
         "license": "MIT",
-        "tags": ["chemistry", "drug-discovery", "molecular", "rdkit"],
+        "tags": [
+          "chemistry",
+          "drug-discovery",
+          "molecular",
+          "rdkit"
+        ],
         "category": "science"
       }
     },
@@ -287,7 +370,12 @@
       "metadata": {
         "author": "mrgoonie",
         "license": "MIT",
-        "tags": ["reasoning", "problem-solving", "analytics", "thinking"],
+        "tags": [
+          "reasoning",
+          "problem-solving",
+          "analytics",
+          "thinking"
+        ],
         "category": "productivity"
       }
     },
@@ -304,7 +392,13 @@
       "metadata": {
         "author": "Hugging Face",
         "license": "Apache-2.0",
-        "tags": ["machine-learning", "llm", "training", "fine-tuning", "huggingface"],
+        "tags": [
+          "machine-learning",
+          "llm",
+          "training",
+          "fine-tuning",
+          "huggingface"
+        ],
         "category": "science"
       }
     },
@@ -321,7 +415,12 @@
       "metadata": {
         "author": "Hugging Face",
         "license": "Apache-2.0",
-        "tags": ["machine-learning", "dataset", "huggingface", "data"],
+        "tags": [
+          "machine-learning",
+          "dataset",
+          "huggingface",
+          "data"
+        ],
         "category": "science"
       }
     },
@@ -338,7 +437,12 @@
       "metadata": {
         "author": "yusufkaraaslan",
         "license": "MIT",
-        "tags": ["tools", "converter", "documentation", "automation"],
+        "tags": [
+          "tools",
+          "converter",
+          "documentation",
+          "automation"
+        ],
         "category": "tools"
       }
     }
@@ -433,8 +537,8 @@
   ],
   "stats": {
     "total_skills": 20,
-    "total_sources": 7,
-    "total_categories": 7,
-    "last_sync": "2026-01-13T00:00:00Z"
+    "last_sync": "2026-02-02T22:15:25.645833",
+    "local_skills": 20,
+    "remote_skills": 20
   }
 }
